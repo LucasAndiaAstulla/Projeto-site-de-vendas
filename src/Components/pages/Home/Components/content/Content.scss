@@ -1,0 +1,9 @@
+@import '../../../../../App.scss';
+
+.MainContent {
+    @include flex;
+    flex-direction: column;
+    gap: 5vw;
+
+    
+}

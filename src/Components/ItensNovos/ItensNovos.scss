@@ -1,0 +1,124 @@
+@import '../../App.scss';
+
+.ItensNovosConteiner {
+    //Conteiner do slider
+    @include flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 100vh;
+    font-family: $font-family-default;
+    background-color: white;
+    border-radius: 1vw 1vw;
+    gap: 0.5vw;
+
+    h3 {
+        font-weight: 500;
+        font-size: 25pt
+    }
+
+    .linhaDecorativa {
+        width: 10vw;
+        border-top: 0.5vh solid #C0091E; 
+    }
+
+    .content_slider {
+        //chamada do slider
+        @include flex;
+        width: 83vw;
+        height: 80vh;
+        background-color: white;
+        border-radius: 1vw 1vw;
+        align-items: center;
+
+        .slick-prev::before{
+            @include flex;
+            color: #453831;
+            font-size: 20pt ;
+            align-items: center;
+        }
+
+        .slick-next::before{
+            @include flex;
+            align-items: center;
+            color: #453831;
+            font-size: 20pt ;
+        }
+
+
+        .conteinerMain {
+            @include flex;
+            
+            
+            .cardIndividual {
+                @include flex;
+                width: 90%;
+                height: max-content;
+                flex-direction: column;
+                border-radius: 1.3vw 1.3vw;
+                margin: 0.9vw 0.9vw 0.9vw 0.9vw;
+
+                
+                .itemImageConteiner {
+                    @include flex;
+
+                    width: 100%;
+                    height: max-content;
+
+                    .imageCard {
+                        @include flex;
+                        width: 100%;
+                        height: max-content;
+                        border-radius: 1.3vw 1.3vw 0 0;
+                    }
+                }
+
+                .bodyCard {
+                    @include flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    height: 15vh;
+                    color: black;
+                    
+                    h5{
+                        font-size: 14pt;
+                        font-weight: 510;
+                        margin: 0.5vw 0 0.5vw 0;
+                    }
+
+                    p {
+                        font-size: small;
+                    }
+
+                    .priceAntigo{
+                        color: rgb(102, 102, 102);
+                        font-size: 10pt;
+                        text-decoration: line-through;
+                    }
+
+                    .novoprice{
+                        color: black;
+                        font-size: 12pt;
+                        font-weight: 600;
+                        
+                    }
+
+                    .descontoprice{
+                        font-size: 8pt; 
+                    }
+                    
+                }
+            }
+
+            .cardIndividual:hover{
+                border: 1px solid rgb(216, 216, 216);
+                box-shadow: 0 0 0.5vw black ;
+            }
+
+
+        }
+
+    }
+
+
+
+}

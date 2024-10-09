@@ -1,0 +1,34 @@
+@import "../../../../../App.scss";
+
+.slideConteiner {
+    @include flex;
+    width: 100%;
+    height: max-content;
+    .slider{
+        @include flex;
+        width: 100vw;
+        height: 75.9vh;
+        
+        .slick-prev::before{
+            @include flex;
+            color: transparent;
+            font-size: 0pt ;
+        }
+
+        .slick-next::before{
+            @include flex;
+            color: transparent;
+            font-size: 0pt ;
+        }
+        
+        .imageConteiner {
+            @include flex;
+
+            img{
+                @include flex;
+                width: 100%;
+                height: 76.3vh;
+            }
+        }
+    }
+}
