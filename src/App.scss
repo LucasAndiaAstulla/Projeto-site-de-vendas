@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+//arquivando config
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//arquivando config
+@mixin grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+//importando a fonte
+@font-face {
+    font-family: 'Lexend', sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;600;800&display=swap");
+}
+
+//Slides image
+
+//fonte
+$font-family-default: 'Lexend', sans-serif;
+
+//tamanho
+$font-size-smaller: 0.8vw;
+$font-size-small: 0.9vw;
+$font-size-card: 1.1vw;
+$font-size-footer: 1.6vw;
+$font-size-normal: 1.2vw;
+$font-size-medium: 1.5vw;
+$font-size-large: 2vw;
+$font-size-icons: 2.1vw;
+
+//cores
+$backgroud-color: #F3F3EB; //provisorio
+$header-color: #CFD8D7; //provisorio
+$header-nav-color: #CFD8D7;
+$cor-vermelha: #C0091E;
+$cor-cinza: #CFD8D7;
+$cor-bege: #F3F3EB;
+$cor-marrom: #453831;
+
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #F3F3EB;
+    height: 100%;
+}

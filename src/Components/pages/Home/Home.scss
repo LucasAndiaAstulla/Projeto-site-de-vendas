@@ -1,0 +1,16 @@
+//Todos os dados de fonte, cores, etc pegar de App.scss
+
+@import "../../../App.scss";
+
+.home{
+    @include flex;
+    flex-direction: column;
+    font-family: $font-family-default;
+
+    .comercialImage{
+        @include flex;
+        width: 85%;
+        height: max-content;
+        
+    }
+}

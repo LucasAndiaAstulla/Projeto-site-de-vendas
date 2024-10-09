@@ -1,0 +1,235 @@
+@import '../../../App.scss';
+
+.singleItenPage {
+    @include flex;
+    flex-direction: column;
+    background-color: white;
+
+    .productBody {
+        @include flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: max-content;
+        margin-top: 13vw;
+
+
+        //parte da esquerda faz o L
+        .imgProductConteiner {
+            @include flex;
+            justify-content: flex-start;
+            width: 50%;
+            gap: 1vw;
+            padding: 1vw;
+            padding-right: 4vw;
+
+            #produtUnicoImg {
+                @include flex;
+                width: 75%;
+
+            }
+
+            .imgSmallGroup {
+                @include flex;
+                width: 11vw;
+                height: max-content;
+                flex-direction: column;
+                align-items: start;
+                gap: 1vw;
+
+
+                .imgSmallCol {
+                    @include flex;
+                    width: 100%;
+                    height: max-content;
+
+
+                    .imgSmall {
+                        width: 100%;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+
+        //Parte da direita faz a Arminha
+        .informationConteiner {
+            @include flex;
+            flex-direction: column;
+            width: 30%;
+            height: 80vh;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 1vw;
+            font-family: $font-family-default;
+
+            //localização de que page você está
+            .spaceConteiner {
+                @include flex;
+                flex-direction: row;
+                font-size: small;
+
+                .listaConteiner,
+                .pageLocalisation,
+                .ficouDefora {
+                    @include flex;
+                    flex-direction: row;
+                    color: rgb(125, 125, 125);
+                }
+
+                .pageLocalisation:hover {
+                    color: rgb(0, 0, 0);
+                }
+            }
+
+            .tituloPage {
+                @include flex;
+                font-size: 3vw;
+                flex-wrap: wrap;
+            }
+
+            #outPrice {
+                color: rgb(167, 167, 167);
+                font-size: smaller;
+            }
+
+
+            //desconto da roupa
+            .descontoConteiner {
+                display: flex;
+                flex-direction: row;
+                gap: 1vw;
+                .price{
+                    font-size: 2vw;
+                    font-weight: 501;
+                }
+                .desconto {
+                    @include flex;
+                    width: 3vw;
+                    font-weight: 501;
+                    background-color: aqua;
+                    border-radius: 0.35vw 0.35vw 0.35vw;
+                }
+
+            }
+
+            #parcelamento {
+                font-size: smaller;
+                font-weight: 400;
+            }
+
+            //tamanho da roupa
+            .tamanhoItem {
+                @include flex;
+                gap: 1vw;
+                width: 17vw;
+                height: 8vh;
+                padding: 1vw;
+                border: 0.1vw solid rgb(218, 218, 218);
+                border-radius: 0.2vw 0.2vw 0.2vw;
+
+                .buttonSize{
+                    background-color: rgb(218, 218, 218);
+                    width: 2vw;
+                    height: 4vh;
+                    border: none;
+                    border-radius: 0.35vw 0.35vw 0.35vw;
+                    font-weight: 501;
+                }
+
+                .buttonSize:hover {
+                    border: 0.2vw solid black;
+                }
+            }
+
+            .espaçoComprar {
+                @include flex;
+                gap: 1vw;
+
+                .quantidadeItem{
+                    @include flex;
+                    gap: 0.5vw;
+                    width: 8vw;
+                    border: 0.1vw solid rgb(218, 218, 218);
+                    border-radius: 0.35vw 0.35vw 0.35vw;
+                    justify-content: space-between;
+
+                    .boxQuantidade{
+                        @include flex;
+                        width: 100%;
+                        height: max-content;
+                        background-color: white;
+                        
+                    }
+                    
+                    .buttonQunatidade {
+                        @include flex;
+                        border: none;
+                        width: 10vw;
+                        font-size: 2vw;
+                        background-color: white;
+                    }
+
+                    .buttonQunatidade:active {
+                        background-color: aqua;
+                    }
+
+                }
+                
+                #buttonComprar {
+                    @include flex;
+                    width: 8vw;
+                    height: 5vh;
+                    border-radius: 0.35vw 0.35vw 0.35vw;
+                    background-color: aqua;
+                    border: none;
+
+                }
+                #buttonComprar:hover {
+                    background-color: orange;
+                    cursor: pointer;
+                }
+                
+            }
+
+            
+            .informationCompra {
+                @include flex;
+                list-style-type: none;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1vw;
+                padding-top: 4vw;
+
+                .unidadeInformation {
+                    @include flex;
+                    flex-direction: row;
+                    gap: 1.5vw;
+
+                    .infoImage {
+                        width: 2vw;
+                        height: 5.1vh;
+                    }
+
+                    .colCompra {
+                        @include flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        font-size: 7pt;
+                    }
+                }
+
+
+            }
+        }
+
+
+
+
+
+    }
+
+}

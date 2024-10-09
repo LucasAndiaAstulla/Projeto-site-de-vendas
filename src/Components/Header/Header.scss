@@ -1,0 +1,131 @@
+//Todos os dados de fonte, cores, etc pegar de App.scss
+@import "../../App.scss";
+
+#header {
+    @include flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: none;
+    width: 100vw;
+    height: 25vh;
+    color: black;
+    background-color: $header-color;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: $font-family-default;
+
+    .navegation {
+        @include flex;
+        margin-top: 1vw;
+        width: 90vw;
+        height: 14vh;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.5vw;
+
+        #logo {
+            @include flex;
+            width: max-content;
+
+            .logoPage {
+                width: 11vw;
+                height: max-content;
+                filter: grayscale(0) brightness(0) sepia(0);
+            }
+        }
+
+        nav {
+            @include flex;
+            width: max-content;
+            height: 5.5vh;
+            flex-grow: 1;
+            justify-content: flex-end;
+
+
+            .search_input {
+                width: 31vw;
+                height: 100%;
+                border: none;
+                border-radius: 0.4vw 0 0 0.4vw;
+                background-color: white;
+            }
+
+            .search_Button {
+                height: 100%;
+                @include flex;
+                justify-content: center;
+                background-color: #F3F3EB;
+                cursor: pointer;
+                border-radius: 0 0.4vw 0.4vw 0;
+                border: none;
+
+                span {
+                    width: 2vw;
+                    height: max-content;
+                    color: #453831;
+                    border-radius: 0.1vw;
+                }
+            }
+        }
+
+        .icons {
+            width: max-content;
+            height: max-content;
+
+            ul {
+                @include flex;
+                column-gap: 2vw;
+
+                .icons-itens {
+                    width: max-content;
+
+                    button {
+                        @include flex;
+                        cursor: pointer;
+                        border: none;
+                        padding: 0.1vw;
+                        background-color: $header-color;
+
+                        span {
+                            font-size: $font-size-icons;
+                            color: #453831;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+    .menu-banner {
+        @include flex;
+        flex-direction: column;
+        width: 100vw;
+        height: max-content;
+        background-color: #CFD8D7;
+        border-top: 0.1px solid #F3F3EB;
+        box-shadow: 0 0 0.5vw white;
+
+        ul {
+            @include flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 4vw;
+            width: 75vw;
+
+            .category-itens {
+                @include flex;
+                padding: 0.8vw;
+                cursor: pointer;
+                color: #453831;
+                font-weight: 300;
+                text-transform: uppercase;
+                font-size: 10pt;
+            }
+
+        }
+    }
+}

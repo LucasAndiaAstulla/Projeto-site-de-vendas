@@ -1,0 +1,9 @@
+@import '../../App.scss';
+
+.bannerConteiner{
+    @include flex;
+    text-align: center;
+    width: 100vw;
+    height: 4.5vh;
+    background-color: orange;
+}

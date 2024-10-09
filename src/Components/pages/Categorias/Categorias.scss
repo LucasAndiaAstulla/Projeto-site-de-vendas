@@ -1,0 +1,113 @@
+@import '../../../App.scss';
+
+.CategoriasConteiner {
+    @include flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+
+    .marcaçãoPage {
+        @include flex;
+        margin: 15vw 0 7vw 0;
+        width: 100%;
+        height: max-content;
+        font-family: $font-family-default;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-around;
+        gap: 50vw;
+
+        .tituloPage {
+            @include flex;
+            font-size: 4vw;
+        }
+
+        .spaceConteiner {
+            @include flex;
+
+            .listaConteiner,
+            .pageLocalisation {
+                @include flex;
+                flex-direction: row;
+                color: rgb(125, 125, 125);
+            }
+
+            .pageLocalisation:hover {
+                color: rgb(0, 0, 0);
+            }
+        }
+
+    }
+
+
+    .corpoDaPagina {
+        
+        @include flex;
+        justify-content: space-around;
+        align-items: start;
+        gap: 1vw;
+        width: 100%;
+
+
+        .configItens {
+            @include flex;
+            background-color: aquamarine;
+            align-content: flex-start;
+            width: 31vw;
+            height: 80vh;
+
+        }
+
+        .itensConteiner {
+            display: grid;
+            grid-template-columns: 20vw 20vw 20vw;
+            grid-template-rows: 30vw 30vw 30vw 30vw 30vw;
+            gap: 1.5vw;
+            row-gap: 5vw;
+            grid-column-start: 3;
+            grid-column-end: 1;
+
+
+
+
+            .cardItem {
+                @include flex;
+                flex-direction: column;
+
+
+                .itemImageConteiner {
+                    @include flex;
+
+
+                    .imagensItens {
+                        width: 20vw;
+                        height: 100%;
+                    }
+                    .imagensItens:hover{
+                        border: solid 1px white;
+                    }
+                }
+
+                .corpoCard {
+                    display: flex;
+                    flex-direction: column;
+                    font-family: $font-family-default;
+                    color: black;
+                    text-align: start;
+                    font-size: 1.1vw;
+
+                    h5{
+                        text-align: start;
+                        font-size: 1.2vw;
+                        margin: 0 0 0.5vw 0;
+                    }
+                }
+
+
+            }
+
+        }
+
+    }
+
+}

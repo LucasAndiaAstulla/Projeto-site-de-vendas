@@ -1,0 +1,32 @@
+@import "../../../App.scss";
+
+.DropdownContent {
+    @include flex;
+    flex-direction: row;
+    gap: 25vw;
+    width: 100%;
+    height: max-content;
+    background-color: $header-color;
+    border: 1px solid white;
+    position: absolute;
+    top: 9.5rem;
+
+    .listDropdown {
+        @include flex;
+        flex-direction: column;
+        gap: 3.7vw;
+        font-weight: 300;
+    }
+
+    .DropdowIMG {
+        @include flex;
+        width: 28vw;
+        height: 29vh;
+        background-color: yellow;
+        margin: 1vw 0 1vw 0;
+    }
+}
+
+.DropdownContent::before{
+    position: absolute;
+}
