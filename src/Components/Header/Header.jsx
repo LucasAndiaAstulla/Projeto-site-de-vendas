@@ -17,7 +17,11 @@ export default function index() {
             <img src={Logo} alt="Logo" className="logoPage" />
           </a>
         </div>
-
+        
+        <h1>
+          Lojas
+        </h1>
+        
         <nav>
           <input
             type="text"
