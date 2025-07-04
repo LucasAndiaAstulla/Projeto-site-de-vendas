@@ -11,7 +11,11 @@ export default function Categorias() {
 
             <Header />
 
+<<<<<<< HEAD
 
+=======
+            {/*Parte da marcação da pagina*/}
+>>>>>>> 33dad7a (Projeto site de vendas)
             <section className="marcaçãoPage">
                 <div className="tituloPage">
                     <h1>Produtos</h1>
@@ -28,8 +32,15 @@ export default function Categorias() {
 
             </section>
 
+<<<<<<< HEAD
             <section className="corpoDaPagina">
 
+=======
+
+            {/*Parte do body da pagina*/}
+            <section className="corpoDaPagina">
+                
+>>>>>>> 33dad7a (Projeto site de vendas)
                 <div className="configItens">
                     <h1>Vai ficar aqui</h1>
                 </div>
