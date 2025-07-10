@@ -1,5 +1,8 @@
+
+import { AiFillStar } from 'react-icons/ai';
 //Frente
-import BlusaVermelha from './Components/assets/blusaVermelhaFrente.svg';
+
+import BlusaVermelha from './Components/assets/blusaVermelha.jpg';
 import CalcaMoletom from './Components/assets/calçaPretaFrente.svg';
 import CamisetaPolo from './Components/assets/camisetaPoloFrente.svg';
 import RegataListrada from './Components/assets/regataListradaFrente.svg';
@@ -18,84 +21,78 @@ import VestidoLongoV from './Components/assets/vestidoLongoVerso.svg'
 
 
 const LANCAMENTOS = [
-    {
-        id: 1,
-        novo: 1,
-        name: 'Blusinha Vermelha',
-        price: '1,00 R$',
-        newprice: '100,00 R$',
-        desconto: '3x de R$ 11,63 no cartão s/ juros',
-        image: BlusaVermelha,
-        verso: BlusaVermelhaV,
-        exemploImg: ItemExemplo,
-        details:
-            '',
-    },
-    {
-        id: 2,
-        novo: 4,
-        name: 'Calça Moletom',
-        price: '1,00 R$',
-        newprice: '100,00 R$',
-        desconto: '3x de R$ 11,63 no cartão s/ juros',
-        image: CalcaMoletom,
-        verso: CalcaMoletomV,
-        exemploImg: ItemExemplo,
-        details:
-            '',
-    },
-    {
-        id: 3,
-        novo: 6,
-        name: 'Camiseta Polo',
-        price: '1,00 R$',
-        newprice: '100,00 R$',
-        desconto: '3x de R$ 11,63 no cartão s/ juros',
-        image: CamisetaPolo,
-        verso: CamisetaPoloV,
-        exemploImg: ItemExemplo,
-        details:
-            '',
-    },
-    {
-        id: 4,
-        name: 'Regata Listrada',
-        novo: 8,
-        price: '1,00 R$',
-        newprice: '100,00 R$',
-        desconto: '3x de R$ 11,63 no cartão s/ juros',
-        image: RegataListrada,
-        verso: RegataListradaV,
-        exemploImg: ItemExemplo,
-        details:
-            '',
-    },
-    {
-        id: 5,
-        name: 'Saia Longa',
-        novo: 10,
-        price: '1,00 R$',
-        newprice: '100,00 R$',
-        desconto: '3x de R$ 11,63 no cartão s/ juros',
-        image: SaiaLonga,
-        verso: SaiaLongaV,
-        exemploImg: ItemExemplo,
-        details:
-            '',
-    },
-    {
-        id: 6,
-        name: 'Vestido Longo',
-        novo: 12,
-        price: '1,00 R$',
-        newprice: '100,00 R$',
-        desconto: '3x de R$ 11,63 no cartão s/ juros',
-        image: VestidoLongo,
-        verso: VestidoLongoV,
-        exemploImg: ItemExemplo,
-        details:
-            '',
-    },
-]
+  {
+    id: 1,
+    img: BlusaVermelha,
+    title: 'Blusinha Vermelha',
+    star: <AiFillStar className="rating-star" />,
+    reviews: '(102 reviews)',
+    prevPrice: '100,00 R$',
+    newPrice: '1,00 R$',
+    company: 'Fashion Co',
+    color: 'vermelha',
+    category: 'blusa',
+  },
+  {
+    id: 2,
+    img: CalcaMoletom,
+    title: 'Calça Moletom',
+    star: <AiFillStar className="rating-star" />,
+    reviews: '(99 reviews)',
+    prevPrice: '100,00 R$',
+    newPrice: '1,00 R$',
+    company: 'Urban Style',
+    color: 'cinza',
+    category: 'calça',
+  },
+  {
+    id: 3,
+    img: CamisetaPolo,
+    title: 'Camiseta Polo',
+    star: <AiFillStar className="rating-star" />,
+    reviews: '(112 reviews)',
+    prevPrice: '100,00 R$',
+    newPrice: '1,00 R$',
+    company: 'Classic Polo',
+    color: 'azul',
+    category: 'camiseta',
+  },
+  {
+    id: 4,
+    img: RegataListrada,
+    title: 'Regata Listrada',
+    star: <AiFillStar className="rating-star" />,
+    reviews: '(78 reviews)',
+    prevPrice: '100,00 R$',
+    newPrice: '1,00 R$',
+    company: 'Trendy Stripes',
+    color: 'listrada',
+    category: 'regata',
+  },
+  {
+    id: 5,
+    img: SaiaLonga,
+    title: 'Saia Longa',
+    star: <AiFillStar className="rating-star" />,
+    reviews: '(84 reviews)',
+    prevPrice: '100,00 R$',
+    newPrice: '1,00 R$',
+    company: 'Fashion Skirts',
+    color: 'vermelha',
+    category: 'saia',
+  },
+  {
+    id: 6,
+    img: VestidoLongo,
+    title: 'Vestido Longo',
+    star: <AiFillStar className="rating-star" />,
+    reviews: '(123 reviews)',
+    prevPrice: '100,00 R$',
+    newPrice: '1,00 R$',
+    company: 'Glam Dress',
+    color: 'verde',
+    category: 'vestido',
+  },
+];
 
 export default LANCAMENTOS;

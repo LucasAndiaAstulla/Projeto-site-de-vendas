@@ -16,7 +16,7 @@ export default function SingleProduct() {
     //Puxa os dados direto para meu codigo principal
     const { productId } = useParams();
     const singleProduct = PRODUCTS.find(product => product.id === parseInt(productId))
-    const { id, name, price, image, verso, ItemExemplo } = singleProduct
+    const { id, name, price, img, verso, ItemExemplo } = singleProduct
 
     //Colocar outras imagens secundarias na parte principal
     document.addEventListener('DOMContentLoaded', function(){
@@ -60,7 +60,7 @@ export default function SingleProduct() {
                             <img src={verso} alt="" className="imgSmall" />
                         </div>
                     </div>
-                    <img src={image} alt="" id='produtUnicoImg' />
+                    <img src={img} alt="" id='produtUnicoImg' />
                 </section>
 
                 <section className='informationConteiner'>

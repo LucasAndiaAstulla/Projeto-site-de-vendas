@@ -41,22 +41,13 @@
 
 
     .corpoDaPagina {
-        
+
         @include flex;
         justify-content: space-around;
         align-items: start;
         gap: 1vw;
         width: 100%;
 
-
-        .configItens {
-            @include flex;
-            background-color: aquamarine;
-            align-content: flex-start;
-            width: 31vw;
-            height: 80vh;
-
-        }
 
         .itensConteiner {
             display: grid;
@@ -83,7 +74,8 @@
                         width: 20vw;
                         height: 100%;
                     }
-                    .imagensItens:hover{
+
+                    .imagensItens:hover {
                         border: solid 1px white;
                     }
                 }
@@ -96,7 +88,7 @@
                     text-align: start;
                     font-size: 1.1vw;
 
-                    h5{
+                    h5 {
                         text-align: start;
                         font-size: 1.2vw;
                         margin: 0 0 0.5vw 0;

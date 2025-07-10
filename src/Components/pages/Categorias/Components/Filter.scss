@@ -1,0 +1,108 @@
+@import '../../../../App.scss';
+
+.configItens {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 20px;
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .filtroGrupo {
+        h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .filtroCores {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        .corItem {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            border: 2px solid #888;
+            cursor: pointer;
+            transition: 0.2s;
+
+            &.ativo {
+                border: 3px solid black;
+            }
+
+            &.vermelho {
+                background: red;
+            }
+
+            &.branco {
+                background: white;
+            }
+
+            &.preto {
+                background: black;
+            }
+
+            &.azul {
+                background: blue;
+            }
+        }
+    }
+
+    .filtroTamanhos,
+    .filtroSexo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+
+        .botaoTamanho,
+        .botaoSexo {
+            padding: 0.3rem 0.6rem;
+            font-size: 0.8rem;
+            border: 1px solid #aaa;
+            border-radius: 6px;
+            background: #f0f0f0;
+            cursor: pointer;
+
+            &.ativo {
+                background: #222;
+                color: white;
+            }
+        }
+    }
+
+    .filtroPreco {
+        input[type="range"] {
+            width: 100%;
+        }
+
+        .valoresPreco {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            margin-top: 0.2rem;
+        }
+    }
+
+    .filtroOrdenacao {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+
+        label {
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+    }
+
+
+}
